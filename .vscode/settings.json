@@ -1,5 +1,5 @@
 {
-  "files.autoSave": "afterDelay",
+  "files.autoSave": "off",
   "files.autoSaveDelay": 500,
   "files.exclude": {
     "**/.git": true,
@@ -10,17 +10,17 @@
   "files.associations": {
     "*.js": "javascript"
   },
-  "editor.autoIndent": true,
+  "editor.autoIndent": "full",
   "editor.formatOnSave": true,
   "editor.detectIndentation": true,
   "editor.tabSize": 4,
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 80,
   "editor.wrappingIndent": "indent",
-  "editor.renderIndentGuides": true,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true,
-    "source.fixAll": true
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.guides.indentation": true
 }

@@ -1,7 +1,19 @@
 # read PDF File
 
-class PDF_Reader():
+from .util import FileOperator
+
+class PDFReader():
     """PDF Reader
     """
-    def __init__(self):
-        pass
+    def __init__(
+            self,
+            path: str,
+        ):
+        """Initialize PDF Reader Object
+
+        Args:
+            path (str): PDF File path
+        """
+        self.content = FileOperator().read_file_lines(path=path)
+
+
